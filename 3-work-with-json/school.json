@@ -1,0 +1,24 @@
+{
+    "Students" : {
+        "Ali":{
+            "name": "ali",
+            "lastname": "mohammadi",
+            "age": 15
+        },
+        "akbar":{
+            "name": "akbar",
+            "lastname": "akbari",
+            "age": 150
+        },
+        "mohsen":{
+            "name": "mohsen",
+            "lastname": "mohseni",
+            "age": 35
+        },
+        "Ahmad":{
+            "name": "ahmad",
+            "lastname": "ahmadi",
+            "age": 14
+        }
+    }
+}
