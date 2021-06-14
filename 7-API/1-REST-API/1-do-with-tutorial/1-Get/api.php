@@ -5,7 +5,7 @@ if (!empty($_GET['pro'])) {
     $name = $_GET['pro'];
     $price = get_price($name);
     if (empty($price)) {
-        response(200, "Product Not Found", NULL);
+        response(400, "Product Not Found", NULL);
     } else {
         response(200, "Product Found", $price);
     }

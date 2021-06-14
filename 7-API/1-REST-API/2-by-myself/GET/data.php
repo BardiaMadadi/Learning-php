@@ -1,22 +1,33 @@
 <?php
-function Get_info($product_name)
+function Get_info($name)
 {
     $products = [
-        "Pen" => [
-            "price" => 20,
-            "Name" => "Pen"
-        ]
-        ,
-        "Book" => [
-            "price" => 200,
-            "Name" => "Book"
-        ]
+        "pen"=>[
+            "name" => "pen",
+            "price" => "10"
+        ],
+        "book"=>[
+            "name" => "book",
+            "price" => "100"
+        ],
+        "pc"=>[
+            "name" => "pc",
+            "price" => "100,000"
+        ],
+        "bag"=>[
+            "name" => "bag",
+            "price" => "100"
+        ],
+        "SSD"=>[
+            "name" => "SSD",
+            "price" => "1,000"
+        ],
+        "HDD"=>[
+            "name" => "HDD",
+            "price" => "10,000"
+        ],
     ];
-        foreach ($products[$product_name] as $product_item) {
-            if($product_name == $product_item["name"]){
-                return $product_item;
-                break;
-            }
-        }
-    
+    $items['name'] = $products[$name]["name"];
+    $items['price'] = $products[$name]["price"];
+    return $items;
 }
